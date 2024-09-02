@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+.site-header {
+	background-color: #111;
+	color: #fff;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:1vw 3vw;
+}
+
+.logo h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.filter-options {
+	background-color: #333;
+	border: 0.1vw solid #555;
+	border-radius: 1vw;
+	padding: 1vw 3vw;
+	font-size: 1em;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.filter-options:hover {
+	color: #fff;
+	border-color: #666;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filter-options.active {
+	color: #fff;
+	border-color: #777;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 2vw;
+}
+
+.main-nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.hero {
+	background-color: #333;
+	color: #fff;
+	padding: 3vw 1vw;
+	text-align: center;
+}
+
+.hero h2 {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.album-grid {
+	margin: 1vw auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2vw;
+	padding: 1vw 2vw;
+}
+
+.album-item {
+	background-color: #fff;
+	border: 0.1vw solid #ddd;
+	border-radius: 1vw;
+	overflow: hidden;
+	box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.1);
+}
+
+.album-item img {
+	width: 100%;
+	height: auto;
+}
+
+.album-info {
+	padding: 0.5em;
+}
+
+.album-info h3 {
+	font-size: 1.5em;
+	margin: 0 0 1vw;
+	color: #333;
+}
+
+.album-info p {
+	margin: 0.5vw 0;
+	color: #666;
+}
+
+.site-footer {
+	background-color: #111;
+	color: #fff;
+	text-align: center;
+	padding: 1vw;
+	border-top: 0.1vw solid #e5e5e5;
+}
+
+.footer-inner {
+	margin: 0 auto;
+	padding: 0 1vw;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+	.site-header,
+	.main-nav ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero h2 {
+		font-size: 2em;
+	}
+
+	.album-grid {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+
+	.album-info h3 {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		padding: 20px 10px;
+	}
+
+	.hero h2 {
+		font-size: 1.5em;
+	}
+
+	.album-info h3 {
+		font-size: 1em;
+	}
+
+	.album-info p {
+		font-size: 0.9em;
+	}
+}
