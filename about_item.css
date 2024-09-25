@@ -24,6 +24,14 @@
 	font-size: 1.2em;
 }
 
+.button-group {
+	display: flex;
+}
+
+.button-group a {
+	margin: 1vw;
+}
+
 @media (max-width: 768px) {
 	.product-detail {
 		flex-direction: column;

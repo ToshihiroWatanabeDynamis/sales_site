@@ -3,7 +3,7 @@
         'name' => 'toshihiro/sales_site',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '21a2e7777146af48a270c4fd1fd2db2388bf2803',
+        'reference' => '62763882d34e110fcd057df58b1234dba202def8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -58,7 +58,7 @@
         'toshihiro/sales_site' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '21a2e7777146af48a270c4fd1fd2db2388bf2803',
+            'reference' => '62763882d34e110fcd057df58b1234dba202def8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

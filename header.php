@@ -1,3 +1,5 @@
+<?php require_once 'session_manager.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -44,9 +46,11 @@
 
 		<nav class="main-nav">
 				<ul>
-						<li><a href="#">ログイン</a></li>
-						<li><a href="#">ほしい物リスト</a></li>
-						<li><a href="#">カート</a></li>
+						<?= isLoggedIn() ?
+						'<li><a href="dashboard.php">ダッシュボード</a></li>' :
+						'<li><a href="login.php">ログイン</a></li>' ?>
+						<li><a href="wishlist.php">ほしい物リスト</a></li>
+						<li><a href="cart.php">カート</a></li>
 				</ul>
 		</nav>
 

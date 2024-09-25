@@ -1,6 +1,5 @@
 <?php
 require_once 'Item.php';
-require_once 'data_.php';
 require_once 'Product.php';
 
 $albumId = $_GET['albumId'];
@@ -8,7 +7,7 @@ $albums = new searchProduct();
 $album = $albums->findById($albumId);
 ?>
 
-<?php require_once('header.php') ?>
+<?php require_once 'header.php' ?>
 <body>
 
 		<main class="content">
@@ -26,8 +25,8 @@ $album = $albums->findById($albumId);
 								<p>価格: ¥<?= "{$album->getPrice()}" ?></p>
 								<p>商品説明: ここに商品の詳細な説明が入ります。</p>
 								<div class="button-group">
-										<button class="wishlist-btn">ほしい物リストに追加</button>
-										<button class="cart-btn">カートに入れる</button>
+										<a href="wishlist.php?album_id=<?= $albumId ?>"><button type="submit" name="add_to_wishlist">ほしい物リストに追加</button></a>
+										<a href="cart.php?album_id=<?= $albumId ?>"><button type="submit" name="add_to_cart">カートに追加</button></a>
 								</div>
 						</div>
 
@@ -35,4 +34,4 @@ $album = $albums->findById($albumId);
 		</main>
 
 </body>
-<?php require_once('footer.php') ?>
+<?php require_once 'footer.php' ?>
