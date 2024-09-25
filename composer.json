@@ -1,0 +1,17 @@
+{
+    "name": "toshihiro/sales_site",
+    "autoload": {
+        "psr-4": {
+            "Toshihiro\\SalesSite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ToshihiroWatanabe",
+            "email": "t.watanabe@dynamis.llc"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
